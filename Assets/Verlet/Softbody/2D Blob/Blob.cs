@@ -8,6 +8,7 @@ public class Blob : MonoBehaviour {
   public float floorHeight = -1.5f;
   [Range(1, 10)]
   public int solverIterations = 1;
+  [SerializeField]
   Vector2[] prevPoints, curPoints;
   Vector3[] accumDis;
   float segmentLength, area, circumfrence; //, segmentLengthSquared;
@@ -32,10 +33,10 @@ public class Blob : MonoBehaviour {
     //Integrate the points into the future
     for (int i = 0; i < curPoints.Length; i++) {
       Vector2 tempPos = curPoints[i];
-      curPoints[i] += (curPoints[i] - prevPoints[i]) + ((Vector2)Physics.gravity * 0.001f);
+      curPoints[i] += (curPoints[i] - prevPoints[i]) + ((Vector2)Physics.gravity * 0.0001f);
       prevPoints[i] = tempPos;
     }
-    //curPoints[0] = transform.position; //Allows you to drag the blob around
+    curPoints[0] = transform.position; //Allows you to drag the blob around
 
     //Accumulate displacements from constraints in accumulation buffer
     for (int k = 0; k < solverIterations; k++) {

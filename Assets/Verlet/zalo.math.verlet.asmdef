@@ -1,0 +1,19 @@
+{
+    "name": "zalo.math.verlet",
+    "references": [
+        "GUID:59c98289be629eb448578b41629d1b27",
+        "GUID:1e5e32b007b4faa4e8f00b18576ad22c",
+        "GUID:d8b63aba1907145bea998dd612889d6b",
+        "GUID:2665a8d13d1b3f18800f46e256720795",
+        "GUID:e5d0e265d24e7ad4da988f72a3c6dbab"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
+using Unity.Burst;
 using UnityEngine;
 using UnityEngine.Profiling;
 using Unity.Jobs;
@@ -125,7 +126,7 @@ public class SoftbodyJobified : MonoBehaviour {
     }
   }
 
-  [Unity.Burst.BurstCompile]
+  [BurstCompile]
   public struct ToWorldSpaceJob : IJobParallelFor {
     [ReadOnly]
     public Matrix4x4 localToWorld;
@@ -262,7 +263,7 @@ public class SoftbodyJobified : MonoBehaviour {
     }
   }
 
-  [Unity.Burst.BurstCompile]
+  [BurstCompile]
   public struct AccumulateSurfaceAreaAndVolumeJob : IJobParallelFor {
     [ReadOnly]
     public NativeArray<Vector3> bodyVerts;

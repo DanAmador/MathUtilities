@@ -1,0 +1,25 @@
+{
+  "name": "com.zalo.math",
+  "version": "0.1.0",
+  "displayName": "Zalo Math Utilities",
+  "description": "",
+  "unity": "2019.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zalo/MathUtilities"
+  },
+  "dependencies": {
+  },
+  "author": {
+    "name": "Zalo",
+    "email": "asd",
+    "url": "asd"
+  },
+  "samples": [
+    {
+      "displayName": "Chain",
+      "description": "Chain",
+      "path": "Verlet/0Chain"
+    }
+  ]
+}
